@@ -1,2 +1,9 @@
 rootProject.name = 'jax-ws-test-app'
 
+include('webservice')
+include('ear')
+include('ejb')
+
+project(":ear").name = "jax-ws-test-ear"
+
+

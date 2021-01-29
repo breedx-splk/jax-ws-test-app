@@ -1,0 +1,8 @@
+apply plugin: 'ear'
+
+dependencies {
+    deploy project(path: ':webservice', configuration: 'archives')
+//    deploy project(path: ':war', configuration: 'archives')
+
+    earlib project(':ejb')
+}

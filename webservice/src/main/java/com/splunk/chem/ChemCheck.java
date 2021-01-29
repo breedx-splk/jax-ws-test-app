@@ -1,5 +1,7 @@
 package com.splunk.chem;
+
 import com.signalfx.tracing.api.Trace;
+
 import javax.annotation.PostConstruct;
 import javax.ejb.Stateless;
 import javax.jws.HandlerChain;

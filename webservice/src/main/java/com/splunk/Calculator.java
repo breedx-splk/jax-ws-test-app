@@ -1,5 +1,7 @@
 package com.splunk;
 
+import io.opentelemetry.extension.annotations.WithSpan;
+
 import javax.ejb.Stateless;
 import javax.jws.WebService;
 
@@ -15,6 +17,7 @@ public class Calculator implements CalculatorWs {
         return add1 + add2;
     }
 
+    @WithSpan("Calculator.multiply()")
     public int multiply(int mul1, int mul2) {
         return mul1 * mul2;
     }
